@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css");
 
 body {
-  background-color: #000;
+  background-color: #171F26;
   color: #fff;
   font-size: 12px;
   font-family: "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10,16 +10,15 @@ body {
 
 h2 {
   font-weight: bold;
-  font-size: 2.4em;
+  font-size: 2.4rem;
   color: #2DF781;
-  padding-top: 1.2em;
-  padding-bottom: 0.4em;
+  padding-bottom: 0.4rem;
   text-align: center;
 }
 
 p {
   text-align: center;
-  line-height: 1.6em;
+  line-height: 1.6rem;
 }
 
 .top {}
@@ -28,34 +27,67 @@ p {
 .flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.12);
-  padding: 1.2em;
+  align-items: stretch;
   font-weight: bold;
-  margin: 0 1.6em;
-  border-radius: 0.8em;
+  
 }
 
-.about_us {
+.about_us, .ocean_condition {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.2rem 0;
+  margin: 0 1.6rem 1.2rem;
 }
 
 .About_button {
   text-align: center;
   background-color: #2DF781;
-  color: #000;
-  border-radius: 0.8em;
+  color: #171F26;
+  border-radius: 0.8rem;
   border: 0;
   outline: 0;
-  width: 16em;
-  height: 2.8em;
-  margin-top: 0.8em;
-  margin-bottom: 1.2em;
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
   font-weight: bold;
 }
 
+.circle_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle_1and2, .circle_3and4{
+  display: flex;
+  align-items: center;
+}
+
+.circle_1, .circle_2, .circle_3, .circle_4{
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 2rem;
+  height: 8.2rem;
+  width: 8.2rem;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.4rem;
+}
+
+.circleBold {
+  color: #2DF781;
+  font-size: 1.2rem;
+}
+
+.truck {
+  height: 1.2rem;
+  padding-bottom: 0.4rem;
+}
 
 /* ///600 이상 (데스크탑)/// */
 
@@ -63,6 +95,6 @@ p {
 
   h2 {
     font-weight: bold;
-    font-size: 4.8em;
+    font-size: 4.8rem;
   }
 }
