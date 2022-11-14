@@ -1,13 +1,11 @@
 /* ///600 이하 (모바일)/// */
-#html {
-  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp-dynamic-subset.css");
-  font-size: 12px;
-}
-
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css");
 
 body {
   background-color: #000;
   color: #fff;
+  font-size: 12px;
+  font-family: "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 h2 {
@@ -15,14 +13,15 @@ h2 {
   font-size: 2.4em;
   color: #2DF781;
   padding-top: 1.2em;
-  padding-bottom: 0.8em;
+  padding-bottom: 0.4em;
   text-align: center;
 }
 
-p{
+p {
   text-align: center;
   line-height: 1.6em;
 }
+
 .top {}
 
 
@@ -35,6 +34,24 @@ p{
   font-weight: bold;
   margin: 0 1.6em;
   border-radius: 0.8em;
+}
+
+.about_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About_button {
+  text-align: center;
+  background-color: #2DF781;
+  border-radius: 0.8em;
+  outline: 0;
+  width: 16em;
+  height: 2.8em;
+  margin-top: 0.8em;
+  margin-bottom: 1.2em;
+  font-weight: bold;
 }
 
 
