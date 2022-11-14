@@ -45,6 +45,7 @@ p {
 .About_button {
   text-align: center;
   background-color: #2DF781;
+  color: #000;
   border-radius: 0.8em;
   outline: 0;
   width: 16em;
