@@ -114,12 +114,15 @@ p {
   letter-spacing: 0.028rem;
 }
 
-.game_video_introduction,
 .brand_video_introduction {
+  text-align: center;
+}
+
+.game_video_introduction {
   text-align: left;
 }
 
-.video_size{
+.video_size {
   width: 100%;
   border-radius: 0.6rem;
   margin-top: 0.4rem;
