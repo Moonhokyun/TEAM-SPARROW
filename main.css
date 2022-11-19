@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css");
 
 body {
-  background-color: #171F26;
+  background-color: #171f26aa;
   color: #fff;
   font-size: 12px;
   font-family: "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -166,8 +166,20 @@ dt::after {
   padding: 0.4rem;
 }
 
-/* 배경 제작 */
+.bubble_box {
+  position: absolute;
+  z-index: -4;
+  animation: fadein 8s;
+}
 
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 /* ///600 이상 (데스크탑)/// */
 
 @media screen and (min-width: 600px) {
