@@ -172,6 +172,7 @@ dt::after {
   position: absolute;
   z-index: -4;
   animation: fadein 8s;
+  align-content: center;
 }
 
 @keyframes fadein {
