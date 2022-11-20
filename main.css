@@ -184,7 +184,7 @@ dt::after {
 }
 /* ///600 이상 (데스크탑)/// */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
 
   h2 {
     font-weight: bold;
