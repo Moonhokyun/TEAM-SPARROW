@@ -143,14 +143,6 @@ p {
   letter-spacing: 0.028rem;
 }
 
-.brand_video_introduction {
-  text-align: left;
-}
-
-.game_video_introduction {
-  text-align: left;
-}
-
 .video_size {
   width: 100%;
   border-radius: 0.6rem;
@@ -200,7 +192,9 @@ dt::after {
     font-family: "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   }
 
-  h2 {
+  h2,
+  .game_video_title,
+  .brand_video_title {
     font-weight: bold;
     font-size: 2.4rem;
     color: #2DF781;
@@ -209,7 +203,9 @@ dt::after {
     line-height: 3.2rem;
   }
 
-  p {
+  p,
+  .game_video_introduction,
+  .brand_video_introduction {
     text-align: center;
     line-height: 1.6rem;
   }
@@ -217,24 +213,14 @@ dt::after {
   .flex {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     font-weight: bold;
   }
 
 
   .about_us {
     align-items: center;
-  }
-
-  .flex_big_1,
-  .flex_big_2 {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .flex_big_1 {
-    display: flex;
-    flex-direction: column;
+    width: 60vw;
   }
 
   .about_us,
@@ -245,16 +231,11 @@ dt::after {
   }
 
 
-  .brand_video {
-    margin-left: 1.2rem;
-    justify-content: space-between;
-    margin-right: 0;
-    text-align: left;
-  }
-
-
+  .brand_video,
   .game_video {
-    margin-right: 1.2rem;
+    margin: 1.2rem auto;
+    align-items: center;
+    width: 60vw;
   }
 
   .ocean_condition {
@@ -263,6 +244,7 @@ dt::after {
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
+    width: 60vw;
   }
 
   .ocean_condition_1 {
@@ -272,22 +254,75 @@ dt::after {
 
   .circle_flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
   }
 
-  .flex_big_2 {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-  }
 
   .process {
     width: 50%;
     margin: auto;
     display: block;
     padding-top: 1.2rem;
+  }
+
+  .Team_logo {
+    height: 6rem;
+    display: block;
+    padding: 20rem 0;
+    position: static;
+    z-index: 10;
+  }
+
+  .bubbles {
+    position: relative;
+    width: 100vw;
+    height: 47.2rem;
+    overflow: hidden;
+  }
+
+  .svg_size_3rem {
+    width: 6rem;
+  }
+  
+  .svg_size_2rem {
+    width: 4rem;
+  }
+  
+  .svg_size_1rem {
+    width: 2rem;
+  }
+
+  .About_button {
+    width: 20rem;
+    margin-top: 1.2rem;
+  }
+
+  .circle_flex {
+    margin: 1.2rem 0;
+    width: 60rem;
+  }
+
+  .process {
+    width: 28rem;
+  }
+
+  .circle_1,
+  .circle_2,
+  .circle_3,
+  .circle_4 {
+    display: block;
+    width: 12rem;
+  }
+
+  .video_size {
+    width: 40rem;
+  }
+
+  .game_video_title,
+  .brand_video_title {
+    margin: 0 auto;
   }
 }
