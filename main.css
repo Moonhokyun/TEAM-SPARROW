@@ -29,7 +29,6 @@ p {
   flex-direction: column;
   align-items: stretch;
   font-weight: bold;
-
 }
 
 .about_us,
@@ -44,6 +43,23 @@ p {
   border-radius: 0.8rem;
   padding: 1.2rem;
   margin: 0 1.6rem 1.2rem;
+  z-index: -10;
+}
+
+.Team_logo {
+  margin: 0 auto;
+  width: 100%;
+  height: 4rem;
+  display: block;
+  padding: 6rem 0;
+  position: static;
+  z-index: 10;
+}
+
+.bubble_box {
+  position: absolute;
+  z-index: 10;
+  animation: fadein 8s;
 }
 
 .About_button {
@@ -76,7 +92,7 @@ p {
 .circle_2,
 .circle_3,
 .circle_4 {
-  margin: 0.4EM;
+  margin: 0.4rem;
 }
 
 .circleBold {
@@ -106,7 +122,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 100;
+  /* z-index: 100; */
   background-color: #333A40;
 }
 
@@ -136,22 +152,7 @@ p {
 #footer {
   background-color: rgba(0, 0, 0, 0.51);
   color: #fff;
-  padding: 2.6rem;
-}
-
-.footer_link {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  cursor: pointer;
-
-}
-
-.Team_logo {
-  margin: 0 auto;
-  height: 4rem;
-  display: block;
-  padding: 2rem 0;
+  /* padding: 2.6rem; */
 }
 
 .dl {
@@ -168,27 +169,117 @@ dt::after {
   padding: 0.4rem;
 }
 
-.bubble_box {
-  position: absolute;
-  z-index: -4;
-  animation: fadein 8s;
-  align-content: center;
-}
+
 
 @keyframes fadein {
   from {
-      opacity: 0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
+
 /* ///600 이상 (데스크탑)/// */
 
 @media screen and (min-width: 1200px) {
 
+  body {
+    background-color: #171F26;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  }
+
   h2 {
     font-weight: bold;
-    font-size: 4.8rem;
+    font-size: 2.4rem;
+    color: #2DF781;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    line-height: 3.2rem;
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.6rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: bold;
+  }
+
+
+  .about_us {
+    align-items: center;
+  }
+
+  .flex_big_1,
+  .flex_big_2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex_big_1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_us,
+  .ocean_condition,
+  .game_video,
+  .brand_video {
+    margin: 1.2rem;
+  }
+
+
+  .brand_video {
+    margin-left: 1.2rem;
+    justify-content: space-between;
+    margin-right: 0;
+    text-align: left;
+  }
+
+
+  .game_video {
+    margin-right: 1.2rem;
+  }
+
+  .ocean_condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .ocean_condition_1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .circle_flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex_big_2 {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  .process {
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding-top: 1.2rem;
   }
 }
