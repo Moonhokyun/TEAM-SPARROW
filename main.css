@@ -43,7 +43,7 @@ p {
   border-radius: 0.8rem;
   padding: 1.2rem;
   margin: 0 1.6rem 1.2rem;
-  z-index: -10;
+  /* z-index: -10; */
 }
 
 .Team_logo {
@@ -58,7 +58,7 @@ p {
 
 .bubble_box {
   position: absolute;
-  z-index: 10;
+  /* z-index: 10; */
   animation: fadein 8s;
 }
 
