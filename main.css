@@ -144,8 +144,8 @@ p {
 }
 
 .video_size {
-  width: 40rem;
-   height: 32rem;
+  width: 100%;
+  height: auto;
   border-radius: 0.6rem;
   margin-top: 0.4rem;
 }
